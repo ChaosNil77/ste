@@ -1,65 +1,111 @@
----
----
-{% include header.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Eanswythe's</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/home/images/stelogo.png">
 
-    <main class="container">
-        
-        <section class="hero-gallery">
-            <img src="/home/images/bellboat.jpg" alt="Students in a bellboat" class="slide slide-1">
-            <img src="/home/images/coastalpark.jpg" alt="Students at the coastal park" class="slide slide-2">
-        </section>
+    <!-- Linked CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
 
-        <div class="content-grid">
-            
-            <section class="welcome-panel">
-                <div class="welcome-header">
-                    <h2>Welcome to St. Eanswythe's Primary School</h2>
-                </div>
-                
-                <div class="welcome-content">
-                    <img src="/home/images/claire.png" alt="Headteacher Mrs Jacobs" class="headteacher-photo">
-                    
-                    <p class="welcome-intro">Welcome to St Eanswythe’s Primary School, a happy and caring community with a strong Christian ethos, located in the heart of town. We take a holistic approach to education, ensuring every child achieves excellent academic progress while developing into a kind, respectful, and responsible citizen.</p>
-                    
-                    <p class="highlight-blue">If you are looking for a school place in September 2027, please contact us to book a tour of our friendly school.</p>
-                    
-                    <p>From Reception onwards, our dedicated team provides a supportive environment and a stimulating curriculum that sparks imagination. We strive to nurture each child's unique talents through rich experiences in sports, music, and the arts, alongside frequent school trips and a wide range of extracurricular clubs.</p>
-                    
-                    <p>We are incredibly proud of our school and the well-being of the children in our care. We hope you enjoy exploring our website to learn more, and we warmly invite you to contact us to arrange a visit so you can see our vibrant school community in action.</p>
-
-                    <p>I look forward to welcoming you.</p>
-                    <br>
-                    <p><strong>Mrs Jacobs</strong><br>Headteacher</p>
-                </div>
-            </section>
-
-            <aside class="panel notice-board">
-                <h3>Notice Board</h3>
-                <ul>
-                    <li>
-                        <span class="date-badge">29th June</span>
-                        Ducklings PE
-                    </li>
-                    <li>
-                        <span class="date-badge">29th June</span>
-                        Sponsored Fun Run
-                    </li>
-                    <li>
-                        <span class="date-badge">30th June</span>
-                        Barn Class transition morning
-                    </li>
-                    <li>
-                        <span class="date-badge">30th June</span>
-                        8:30am: KA/KS meeting with parent
-                    </li>
-                    <li>
-                        <span class="date-badge">30th June</span>
-                        8:30am: Effective Church Schools Visit
-                    </li>
-                </ul>
-            </aside>
-
+    <header>
+        <div class="header-left">
+            <a href="/index.html" class="logo-link" title="Go to homepage">
+                <img src="/home/images/stelogo.png" alt="St. Eanswythe's School Logo" class="header-logo">
+            </a>
+            <div class="header-text">
+                <h1>St. Eanswythe's</h1>
+                <p class="subtitle">Church of England Primary School</p>
+                <p class="strapline">Learning Holistically Through God's Unconditional Love.</p>
+            </div>
         </div>
-    </main>
 
-{% include footer.html %}
+        <div class="header-search">
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <input type="hidden" name="as_sitesearch" value="st-eanswythes.kent.sch.uk">
+                <input type="text" name="q" placeholder="Search site..." required>
+                <button type="submit" aria-label="Search">
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <nav>
+        <button class="mobile-menu-toggle">
+            <span>☰ Menu</span>
+        </button>
+        <ul class="nav-links">
+            
+            <li class="dropdown">
+                <a href="/our-school/our-school.html">Our School ▾</a>
+                <div class="dropdown-content">
+                    <a href="/our-school/our-christian-vision.html">Our Christian Vision</a>
+                    <a href="/our-school/our-staff.html">Our Staff</a>
+                    <a href="/our-school/admissions.html">Admissions</a>
+                    <a href="/our-school/governors.html">Governors</a>
+                    <a href="/our-school/policies.html">Policies</a>
+                    <a href="/our-school/inspections.html">Inspection Reports and SATs Results</a>
+                    <a href="/our-school/pupil-premium.html">Pupil Premium</a>
+                    <a href="/our-school/pe-premium.html">PE and Sport Premium</a>
+                    <a href="/our-school/sen.html">Special Educational Needs</a>
+                    <a href="/our-school/pastoral-care.html">Pastoral Care</a>
+                    <a href="/our-school/financial-information.html">Financial Information and Benchmarking</a>
+                </div>
+            </li>
+            
+            <li class="dropdown">
+                <a href="/classes/classes.html">Classes ▾</a>
+                <div class="dropdown-content">
+                    <a href="/classes/class-newsletters.html">Class Newsletters</a>
+                    <a href="/classes/class-r.html">Class R</a>
+                    <a href="/classes/class-1.html">Class 1</a>
+                    <a href="/classes/class-2.html">Class 2</a>
+                    <a href="/classes/class-3.html">Class 3</a>
+                    <a href="/classes/class-4.html">Class 4</a>
+                    <a href="/classes/class-5.html">Class 5</a>
+                    <a href="/classes/class-6.html">Class 6</a>
+                </div>
+            </li>
+            
+            <li class="dropdown">
+                <a href="/parents-and-carers/parents-and-carers.html">Parents and Carers ▾</a>
+                <div class="dropdown-content">
+                    <a href="/parents-and-carers/ptfa.html">PTFA</a>
+                    <a href="/parents-and-carers/newsletters.html">Newsletters</a>
+                    <a href="/parents-and-carers/term-dates.html">Term Dates</a>
+                    <a href="/parents-and-carers/uniform.html">Uniform</a>
+                    <a href="/parents-and-carers/homework.html">Homework</a>
+                    <a href="/parents-and-carers/wraparound-care.html">Breakfast and After School Clubs</a>
+                    <a href="/parents-and-carers/school-meals.html">School Meals</a>
+                    <a href="/parents-and-carers/school-clubs.html">School Clubs</a>
+                    <a href="/parents-and-carers/attendance.html">Attendance</a>
+                </div>
+            </li>
+            
+            <li class="dropdown">
+                <a href="/safeguarding/safeguarding.html">Safeguarding ▾</a>
+                <div class="dropdown-content">
+                    <a href="/safeguarding/child-protection.html">Child Protection and Safeguarding</a>
+                    <a href="/safeguarding/online-safety.html">Online Safeguarding</a>
+                </div>
+            </li>
+            
+            <li class="dropdown">
+                <a href="/church/church.html">Church</a>
+            </li>
+            
+            <li class="dropdown">
+                <a href="/contact/contact.html">Contact Us</a>
+            </li>
+
+        </ul>
+    </nav>
